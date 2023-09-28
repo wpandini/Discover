@@ -1,3 +1,12 @@
+* {
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Inter', sans-serif;
+    color:  #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     /* background-image: url(./assets/bg-mobile.jpg);
     background-repeat: no-repeat;
@@ -10,16 +19,48 @@ body {
 #container {
     width: 360px;
     /* height: 712px; */
-    border: 1px solid red;
-    margin: auto;
+    /* border: 1px solid red; */
+    margin: 56px auto 32px;
 }
 
 #profile {
     text-align: center;
+    padding: 24px;
 }
 
 #profile img {
     /* display: block; */
     width: 112px;
     /* margin: auto; */
+}
+
+#profile > p {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+/* links */
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+ul > li > a {
+    border: solid red;
+    display: flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid var(--stroke-color-dark-mode, rgba(255, 255, 255, 0.50));
+    background: var(--surface-color-dark-mode, rgba(255, 255, 255, 0.10));
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-decoration: none;
+    font-weight: 500;
 }
