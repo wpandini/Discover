@@ -1,10 +1,22 @@
 * {
     font-family: 'Indie Flower', cursive;
     font-family: 'Inter', sans-serif;
-    color:  #ffffff;
+    color:  var(--text-color);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+:root {
+    --text-color: white;
+    --bg-url: url(./assets/bg-mobile.jpg);
+}
+
+
+.light {
+    --text-color:black;
+    --bg-url: url(./assets/bg-mobile-light.jpg);
 }
 
 body {
@@ -13,7 +25,7 @@ body {
     background-position: top center;
     background-size: cover; */
 
-    background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+    background: var(--bg-url) no-repeat top center/cover;
 }
 
 #container {
@@ -70,7 +82,7 @@ ul > li > a {
 }
 
 ul > li > a:hover {
-    border: 1.5px solid var(--text-color-dark-mode, #FFF);
+    border: 1.5px solid var(--text-color-dark-mode, var(--text-color));
     background: var(--surface-color-dark-mode-hover, rgba(255, 255, 255, 0.05));
 }
 
