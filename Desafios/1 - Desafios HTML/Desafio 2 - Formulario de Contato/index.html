@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+</head>
+<body>
+    <form method="GET" action="">
+        <fieldset>
+            <legend>Entre em Contato</legend>
+            <br>
+            <label for="assunto"><strong>Assunto:</strong></label>
+            <select name="assunto" id="assunto" required>
+                <option value="suporte" selected>Suporte</option>
+                <option value="projeto">Projeto</option>
+                <option value="manuntencao">Manutenção</option>
+            </select>
+            <br>
+            <br>
+            <label for="nome"><strong>Nome Completo:</strong></label><br>
+            <input type="text" style="width: 200px;" required>
+            <br>
+            <br>
+            <label for="nome"><strong>E-mail:</strong></label><br>
+            <input type="email" style="width: 200px;" required>
+            <br>
+            <br>
+            <label for="mensagem"><strong>Mensagem:</strong></label><br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+            <br>
+            <br>
+            <input type="checkbox">Aceito receber informações por E-mail
+            <br>
+            <br>
+            <input type="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
